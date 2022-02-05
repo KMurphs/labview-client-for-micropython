@@ -40,21 +40,38 @@ The following provides an overview of the VIs that make up the library:
 
 - ``Initialize.vi``: To Initialize the comport
 
-![Initialize the comport](./MicroPython/Docs/Initialize.png)
+<p align="center">
+  <img alt="Initialize the comport" src="./MicroPython/Docs/Initialize.png">
+</p>
+
+
 
 - ``Close.vi``: To close the comport
 
-![Closes the comport](./MicroPython/Docs/Close.png)
+<p align="center">
+  <img alt="Closes the comport" src="./MicroPython/Docs/Close.png">
+</p>
+
+
 
 - ``SendCommand.vi``: Will send a command to the device and wait for its response
 
-![Send a python command over the comport](./MicroPython/Docs/SendCommand.png)
+<p align="center">
+  <img alt="Send a python command over the comport" src="./MicroPython/Docs/SendCommand.png">
+</p>
+
+
 
 - ``UploadScript.vi``: Will take in a python script and send it over the serial port to the target device. ``SendCommand.vi`` can then be used to invoke functions and variables defined within this script.
 
-![Send a python script over the comport](./MicroPython/Docs/UploadScript.png)
+<p align="center">
+  <img alt="Send a python script over the comport" src="./MicroPython/Docs/UploadScript.png">
+</p>
+
 
 
 To perform, transmit and receive operation, the VI ``TxRx.vi`` will send a message to the target device and wait for a response until some (stopping) conditions are met.
 
-![Send and Receive function / VI](./MicroPython/Docs/TxRx.png)
+<p align="center">
+  <img alt="Send and Receive function / VI" src="./MicroPython/Docs/TxRx.png">
+</p>
