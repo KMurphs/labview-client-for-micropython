@@ -21,7 +21,9 @@ The library has 4 main VIs:
 - ``Initialize.vi``: To Initialize the comport
 
 ![Initialize the comport](./micropython/docs/Initialize.png)
-
+<p>
+    <img src="./micropython/docs/Initialize.png" width="auto"/>
+</p>
 - ``Close.vi``: To close the comport
 
 ![Closes the comport](./micropython/docs/Close.png)
