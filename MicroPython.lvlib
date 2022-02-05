@@ -1,6 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="20008000">
-	<Property Name="NI.Lib.Description" Type="Str">This is wrapper around the serial port VIs to handle communication with MicroPython running on an embedded host/microcontroller.</Property>
+	<Property Name="NI.Lib.Description" Type="Str">This is wrapper around the serial port VIs to handle communication with MicroPython running on an embedded host/microcontroller.
+See Micropython official documentation at https://github.com/micropython/micropython. 
+
+Source: https://github.com/KMurphs/labview-client-for-micropython</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)S!!!*Q(C=\&gt;7^41."%)&lt;B$U2![A[17ZA7,+D!U-'UY.3B7ZA7X)*DMAHZC:R"?D1!AH?8Y5!AY11,!P:9QXX\^XBP&gt;5C^(%N(?NZ6FN_7(WK8K/V3`VQO[XZML\;X@,RP\7W-?K@8&gt;IU^XNO8(^I`T[_^@L]&gt;2@`FP`ROW8V)^XZG$^2?2.3E"N7JJL&lt;5=Z)H?:)H?:)H?:!(?:!(?:!(O:-\O:-\O:-\O:%&lt;O:%&lt;O:%&lt;?&lt;`)23ZSE5.+&amp;E]73C:.*EA[1V(SE8A34_**0.QK]33?R*.Y%A^&gt;F(A34_**0)G(95I]C3@R**\%QV2&gt;EPUCRZ.YG&amp;["*`!%HM!4?&amp;B3A3=!")M&amp;%Q?4Q&amp;$1'0Q2?!*0Y/&amp;0":\!%XA#4_#B79%H]!3?Q".Y'.*X*&lt;KG8?2YG%;/R`%Y(M@D?*B;DM@R/"\(YXB94I\(]4A):U&amp;H=ABS"DE&gt;H"P(YXDY*=@D?"S0YX%].05HZ(VHGK:&gt;Z(A-D_%R0)&lt;(]$#&amp;$)`B-4S'R`!QL1S0Y4%]BM@QM*1-D_%R0!&lt;%7*4F:5RG$$1['9(BY;?@&amp;ON0+&lt;L%_C86Y65&gt;3N6B5RUCV?&amp;10846QV1^*.8GKT:6N6GK46"^/26;B6%NIBL=/GLA=UP&gt;5.@5&amp;86"H6.HV#FVUI&lt;_=-&gt;B',4&gt;&lt;L8:&lt;,2?L\6;L&lt;29,$3@TT7&lt;T43&gt;4D7:4-&lt;8Q!H8_%,Y_FZ[P$K`@4K^0LM&lt;,C`OBZP&lt;B`X`,`U$\U9&gt;[O/]\.%,-GL#-!!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
