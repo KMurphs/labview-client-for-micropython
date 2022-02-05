@@ -20,26 +20,26 @@ What this library makes easy is the integration in Test Systems. One such exampl
 The library has 4 main VIs:
 - ``Initialize.vi``: To Initialize the comport
 
-![Initialize the comport](./micropython/docs/Initialize.png)
+![Initialize the comport](./MicroPython/Docs/Initialize.png)
 <p>
-    <img src="./micropython/docs/Initialize.png" width="auto"/>
+    <img src="./MicroPython/Docs/Initialize.png" width="auto"/>
 </p>
 - ``Close.vi``: To close the comport
 
-![Closes the comport](./micropython/docs/Close.png)
+![Closes the comport](./MicroPython/Docs/Close.png)
 
 - ``SendCommand.vi``: Will send a command to the device and wait for its response
 
-![Send a python command over the comport](./micropython/docs/SendCommand.png)
+![Send a python command over the comport](./MicroPython/Docs/SendCommand.png)
 
 - ``UploadScript.vi``: Will take in a python script and send it over the serial port to the target device. ``SendCommand.vi`` can then be used to invoke functions and variables defined within this script.
 
-![Send a python script over the comport](./micropython/docs/UploadScript.png)
+![Send a python script over the comport](./MicroPython/Docs/UploadScript.png)
 
 
 To perform, transmit and receive operation, the VI ``TxRx.vi`` will send a message to the target device and wait for a response until some (stopping) conditions are met.
 
-
+![Send and Receive function / VI](./MicroPython/Docs/TxRx.png)
 
 
 ## Getting Started
