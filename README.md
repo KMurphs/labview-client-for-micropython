@@ -12,10 +12,10 @@ This is a small library / client implemented in LabVIEW to interact with a targe
 
 Essentially, a library for micropython will use a serial port to interact with the target device running micropython. One requires nothing else than that. And, as such, a program like [Putty](https://www.putty.org/) can be used to open a serial communication session to the device and, pretty much, run python code / commands.
 
-<p align="center">
+<figure align="center">
   <img alt="Putty running on a laptop - And a Python REPL running on the remote device over serial port - The interactive prompt gives you control over the device and all its peripherals. And you can run Python Commands" src="./Docs/Images/Putty.png">
-  <small>Putty running on a laptop - And a Python REPL running on the remote device over serial port - The interactive prompt gives you control over the device and all its peripherals. And you can run Python Commands</small>
-</p>
+  <figcaption>Putty running on a laptop - And a Python REPL running on the remote device over serial port - The interactive prompt gives you control over the device and all its peripherals. And you can run Python Commands</figcaption>
+</figure>
 
 
 
