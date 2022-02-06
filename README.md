@@ -12,6 +12,14 @@ This is a small library / client implemented in LabVIEW to interact with a targe
 
 Essentially, a library for micropython will use a serial port to interact with the target device running micropython. One requires nothing else than that. And, as such, a program like [Putty](https://www.putty.org/) can be used to open a serial communication session to the device and, pretty much, run python code / commands.
 
+<p align="center">
+  <img alt="Putty running on a laptop - And a Python REPL running on the remote device over serial port - The interactive prompt gives you control over the device and all its peripherals. And you can run Python Commands" src="./Docs/Images/Putty.png">
+  <span>Putty running on a laptop - And a Python REPL running on the remote device over serial port - The interactive prompt gives you control over the device and all its peripherals. And you can run Python Commands</span>
+</p>
+
+
+
+
 What this library makes easy is the integration in Test Systems. One such example is [TestStand](https://www.ni.com/en-za/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html) which is a popular Test Executive Software Suite and developed by [National Instrument](https://www.ni.com). 
 
 As a matter of fact, this library was initially created for this very purpose. It is made available to speed up development of similar Systems.
