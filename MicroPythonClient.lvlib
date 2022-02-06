@@ -13,12 +13,12 @@ Source: https://github.com/KMurphs/labview-client-for-micropython</Property>
 
 </Property>
 	<Item Name="Private" Type="Folder">
-		<Item Name="TxRx.vi" Type="VI" URL="../MicroPython/Private/TxRx.vi"/>
+		<Item Name="TxRx.vi" Type="VI" URL="../MicroPythonClient/Private/TxRx.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
-		<Item Name="Close.vi" Type="VI" URL="../MicroPython/Public/Close.vi"/>
-		<Item Name="Initialize.vi" Type="VI" URL="../MicroPython/Public/Initialize.vi"/>
-		<Item Name="SendCommand.vi" Type="VI" URL="../MicroPython/Public/SendCommand.vi"/>
-		<Item Name="UploadScript.vi" Type="VI" URL="../MicroPython/Public/UploadScript.vi"/>
+		<Item Name="Close.vi" Type="VI" URL="../MicroPythonClient/Public/Close.vi"/>
+		<Item Name="Initialize.vi" Type="VI" URL="../MicroPythonClient/Public/Initialize.vi"/>
+		<Item Name="SendCommand.vi" Type="VI" URL="../MicroPythonClient/Public/SendCommand.vi"/>
+		<Item Name="UploadScript.vi" Type="VI" URL="../MicroPythonClient/Public/UploadScript.vi"/>
 	</Item>
 </Library>

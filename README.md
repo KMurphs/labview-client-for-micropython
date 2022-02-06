@@ -46,7 +46,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 - ``Initialize.vi``: To Initialize the comport
 
 <p align="center">
-  <img alt="LabVIEW VI to Initialize the comport" src="./MicroPython/Docs/Initialize.png">
+  <img alt="LabVIEW VI to Initialize the comport" src="./Docs/Images/Initialize.png">
 </p>
 
 
@@ -54,7 +54,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 - ``Close.vi``: To close the comport
 
 <p align="center">
-  <img alt="LabVIEW VI to Closes the comport" src="./MicroPython/Docs/Close.png">
+  <img alt="LabVIEW VI to Closes the comport" src="./Docs/Images/Close.png">
 </p>
 
 
@@ -62,7 +62,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 - ``SendCommand.vi``: Will send a command to the device and wait for its response
 
 <p align="center">
-  <img alt="LabVIEW VI to Send a python command over the comport" src="./MicroPython/Docs/SendCommand.png">
+  <img alt="LabVIEW VI to Send a python command over the comport" src="./Docs/Images/SendCommand.png">
 </p>
 
 
@@ -70,7 +70,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 - ``UploadScript.vi``: Will take in a python script and send it over the serial port to the target device. ``SendCommand.vi`` can then be used to invoke functions and variables defined within this script.
 
 <p align="center">
-  <img alt="LabVIEW VI to Send a python script over the comport" src="./MicroPython/Docs/UploadScript.png">
+  <img alt="LabVIEW VI to Send a python script over the comport" src="./Docs/Images/UploadScript.png">
 </p>
 
 
@@ -78,7 +78,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 ``transmit`` and ``receive`` operations are handled by the VI ``TxRx.vi``. It will send a message to the target device and, optionally, wait, collect and aggregate response packets until some (stopping) conditions are met.
 
 <p align="center">
-  <img alt="LabVIEW VI to Send and Receive function / VI" src="./MicroPython/Docs/TxRx.png">
+  <img alt="LabVIEW VI to Send and Receive function / VI" src="./Docs/Images/TxRx.png">
 </p>
 
 
@@ -86,10 +86,10 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 Similarily, TestStand will use the same set of steps to interact with a target device calling ``Initialize.vi`` as a setup action and ``Close.vi`` as a cleanup action. ``UploadScript.vi`` and ``SendCommand.vi`` will then be used to interact with the target.
 
 <p align="center">
-  <img alt="TestStand Sequence to use the micropython library / client and perform test against a target device." src="./MicroPython/Docs/TestStand Sample.png">
+  <img alt="TestStand Sequence to use the micropython library / client and perform test against a target device." src="./Docs/Images/TestStand Sample.png">
 </p>
 
-The Screen snippet taken from the sample [TestStand Sequence File](./MicroPython/TestStand/Micropython.seq) provided in the repository.
+The Screen snippet taken from the sample [TestStand Sequence File](./Examples/TestStand/Micropython.seq) provided in the repository.
 
 
 ## References
