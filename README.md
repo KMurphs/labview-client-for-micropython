@@ -10,14 +10,16 @@ This is a small library / client implemented in LabVIEW to interact with a targe
 >MicroPython is a project, that aims to put an implementation of Python 3.x on microcontrollers and small embedded systems. You can find the official website at [micropython.org](micropython.org).
 
 
-Essentially, a library for micropython will use a serial port to interact with the device. One requires nothing else than that, and as such a program like [Putty](https://www.putty.org/) can be used to open a session to the device and pretty much run python code / commands.
+Essentially, a library for micropython will use a serial port to interact with the target device running micropython. One requires nothing else than that. And, as such, a program like [Putty](https://www.putty.org/) can be used to open a serial communication session to the device and, pretty much, run python code / commands.
 
-What this library makes easy is the integration in Test Systems. One such example is [TestStand](https://www.ni.com/en-za/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html) which is a popular Test Executive Software developed by [National Instrument](https://www.ni.com). As a matter of fact, this library was initially created for this very purpose. It is made available to speed up development of similar Systems.
+What this library makes easy is the integration in Test Systems. One such example is [TestStand](https://www.ni.com/en-za/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html) which is a popular Test Executive Software Suite and developed by [National Instrument](https://www.ni.com). 
+
+As a matter of fact, this library was initially created for this very purpose. It is made available to speed up development of similar Systems.
 
 
 ## API
 
-The API consists of 4 simple functions / VI:
+The Public API consists of 4 simple functions / VI:
 - ``Initialize.vi``: To Initialize the comport
 - ``Close.vi``: To close the comport
 - ``SendCommand.vi``: Will send a command to the device and wait for its response
@@ -27,9 +29,11 @@ The API consists of 4 simple functions / VI:
 
 ## Getting Started
 
-To get started, one needs some hardware running micropython. MicroPython requires minimum 128K of Flash, 8K of RAM so not all arduino board support it. However, the [official github page](https://github.com/micropython/micropython) lists a few boards that will run micropython. The PyBoard is the official board, but one can use the popular ``ESP32`` or the ``ESP8266``.
+To get started, one needs some hardware running micropython. MicroPython requires a minimum 128K of Flash, 8K of RAM so not all arduino boards will support it (Officially [256k of code space and 16k of RAM](https://www.micropython.org/)). However, the [official github page](https://github.com/micropython/micropython) lists a few boards that will run micropython. 
 
-Once Micropython is installed on your hardware, you can test that everything is working by opening a Serial Communication Session using [Putty](https://www.putty.org/) on hte comport used by your board. 
+The [PyBoard](https://github.com/micropython/pyboard) (running on a STM32F405xxxx) is the official board, but, alternatively, one can use the popular ``ESP32`` or the ``ESP8266`` as well.
+
+Once Micropython is installed on your hardware, you can test that everything is working by opening a Serial Communication Session using [Putty](https://www.putty.org/) on the comport used by your board. 
 
 The same operation can be reproduced using this library by calling ``Initialize.vi`` first, then ``SendCommand.vi`` and ``UploadScript.vi`` as necessary.
 
@@ -70,7 +74,7 @@ The following provides an overview of the VIs that make up the library:
 
 
 
-To perform, transmit and receive operation, the VI ``TxRx.vi`` will send a message to the target device and wait for a response until some (stopping) conditions are met.
+``transmit`` and ``receive`` operations are handled by the VI ``TxRx.vi``. It will send a message to the target device and, optionally, wait, collect and aggregate response packets until some (stopping) conditions are met.
 
 <p align="center">
   <img alt="Send and Receive function / VI" src="./MicroPython/Docs/TxRx.png">
