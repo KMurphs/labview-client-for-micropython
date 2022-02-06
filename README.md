@@ -86,8 +86,10 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 Similarily, TestStand will use the same set of steps to interact with a target device calling ``Initialize.vi`` as a setup action and ``Close.vi`` as a cleanup action. ``UploadScript.vi`` and ``SendCommand.vi`` will then be used to interact with the target.
 
 <p align="center">
-  <img alt="TestStand Sequence to use the micropython library / client and perform test against a target device" src="./MicroPython/Docs/TestStand Sample.png">
+  <img alt="TestStand Sequence to use the micropython library / client and perform test against a target device." src="./MicroPython/Docs/TestStand Sample.png">
 </p>
+
+The Screen snippet taken from the sample [TestStand Sequence File](./MicroPython/TestStand/Micropython.seq) provided in the repository.
 
 
 ## References
