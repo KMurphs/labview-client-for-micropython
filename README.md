@@ -1,5 +1,5 @@
 # labview-client-for-micropython
-This is a client implemented in [LabVIEW](https://www.ni.com/en-za/shop/labview.html) that interacts with an embedded device or constrained system that runs micropython.
+This is a client implemented in [LabVIEW](https://www.ni.com/en-za/shop/labview.html) that interacts with an embedded device or constrained system that runs micropython. Essentially, this target device runs Python code.
 
 > [MicroPython](https://github.com/micropython/micropython)  - a lean and efficient Python implementation for microcontrollers and constrained systems 
 
