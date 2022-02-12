@@ -13,7 +13,7 @@ This is a small library / client implemented in LabVIEW to interact with a targe
 Essentially, a library for micropython will use a serial port to interact with the target device running micropython. One requires nothing else than that. And, as such, a program like [Putty](https://www.putty.org/) can be used to open a serial communication session to the device and, pretty much, run python code / commands.
 
 <figure align="center">
-  <img alt="Putty running on a laptop - And a Python REPL running on the remote device over serial port - The interactive prompt gives you control over the device and all its peripherals. And you can run Python Commands" src="./Docs/Images/Putty.png">
+  <img alt="Putty running on a laptop - And a Python REPL running on the remote device over serial port - The interactive prompt gives you control over the device and all its peripherals. And you can run Python Commands. LabVIEW can do the same." src="./Docs/Images/Putty.png">
   <figcaption align="center"><small>Putty running on a laptop - And a Python REPL running on the remote device over serial port - The interactive prompt gives you control over the device and all its peripherals. And you can run Python Commands</small></figcaption>
   <br/> <br/>
 </figure>
@@ -55,7 +55,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 - ``Initialize.vi``: To Initialize the comport
 
 <p align="center">
-  <img alt="LabVIEW VI to Initialize the comport" src="./Docs/Images/Initialize.png">
+  <img alt="LabVIEW VI to Initialize the comport to the micropython device" src="./Docs/Images/Initialize.png">
 </p>
 
 
@@ -63,7 +63,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 - ``Close.vi``: To close the comport
 
 <p align="center">
-  <img alt="LabVIEW VI to Closes the comport" src="./Docs/Images/Close.png">
+  <img alt="LabVIEW VI to Closes the comport to the micropython device" src="./Docs/Images/Close.png">
 </p>
 
 
@@ -71,7 +71,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 - ``SendCommand.vi``: Will send a command to the device and wait for its response
 
 <p align="center">
-  <img alt="LabVIEW VI to Send a python command over the comport" src="./Docs/Images/SendCommand.png">
+  <img alt="LabVIEW VI to Send a python command over the comport to the micropython device" src="./Docs/Images/SendCommand.png">
 </p>
 
 
@@ -79,7 +79,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 - ``UploadScript.vi``: Will take in a python script and send it over the serial port to the target device. ``SendCommand.vi`` can then be used to invoke functions and variables defined within this script.
 
 <p align="center">
-  <img alt="LabVIEW VI to Send a python script over the comport" src="./Docs/Images/UploadScript.png">
+  <img alt="LabVIEW VI to Send a python script over the comport to the micropython device" src="./Docs/Images/UploadScript.png">
 </p>
 
 
@@ -87,7 +87,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 ``transmit`` and ``receive`` operations are handled by the VI ``TxRx.vi``. It will send a message to the target device and, optionally, wait, collect and aggregate response packets until some (stopping) conditions are met.
 
 <p align="center">
-  <img alt="LabVIEW VI to Send and Receive function / VI" src="./Docs/Images/TxRx.png">
+  <img alt="LabVIEW VI to Send and Receive function / VI to and from the micropython device" src="./Docs/Images/TxRx.png">
 </p>
 
 
@@ -95,7 +95,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 Similarily, TestStand will use the same set of steps to interact with a target device calling ``Initialize.vi`` as a setup action and ``Close.vi`` as a cleanup action. ``UploadScript.vi`` and ``SendCommand.vi`` will then be used to interact with the target.
 
 <p align="center">
-  <img alt="TestStand Sequence to use the micropython library / client and perform test against a target device." src="./Docs/Images/TestStand Sample.png">
+  <img alt="TestStand Sequence to use the micropython library / client and perform test against a target device, i.e. the micropython device" src="./Docs/Images/TestStand Sample.png">
 </p>
 
 The Screen snippet taken from the sample [TestStand Sequence File](./Examples/TestStand/Micropython.seq) provided in the repository.
