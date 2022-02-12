@@ -5,7 +5,7 @@ This is a client implemented in [LabVIEW](https://www.ni.com/en-za/shop/labview.
 
 ## Introduction
 
-This is a small library / client implemented in LabVIEW to interact with a target device running MicroPython.
+This is a small library / client implemented in [LabVIEW](https://www.ni.com/en-za/shop/labview.html) to interact with a target device running MicroPython.
 
 >MicroPython is a project, that aims to put an implementation of Python 3.x on microcontrollers and small embedded systems. You can find the official website at [micropython.org](micropython.org).
 
@@ -28,11 +28,13 @@ As a matter of fact, this library was initially created for this very purpose. I
 
 ## API
 
-The Public API consists of 4 simple functions / VI:
+The Public API consists of 4 simple [LabVIEW](https://www.ni.com/en-za/shop/labview.html) functions / SubVIs:
 - ``Initialize.vi``: To Initialize the comport
 - ``Close.vi``: To close the comport
 - ``SendCommand.vi``: Will send a command to the device and wait for its response
 - ``UploadScript.vi``: Will take in a python script and send it over the serial port to the target device. ``SendCommand.vi`` can then be used to invoke functions and variables defined within this script.
+
+When integrating with a Test Executive like [TestStand](https://www.ni.com/en-za/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html), these are the VIs that will be called.
 
 
 
@@ -49,8 +51,8 @@ The same operation can be reproduced using this library by calling ``Initialize.
 
 ## Design
 
-As stated previously, the library is written for LabVIEW and can be used with TestStand.
-The following provides an overview of the of the LabVIEW VIs that make up the library:
+As stated previously, the library is written for [LabVIEW](https://www.ni.com/en-za/shop/labview.html) and can be used with [TestStand](https://www.ni.com/en-za/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html).
+The following provides an overview of the of the [LabVIEW](https://www.ni.com/en-za/shop/labview.html) VIs that make up the library:
 
 - ``Initialize.vi``: To Initialize the comport
 
@@ -92,7 +94,7 @@ The following provides an overview of the of the LabVIEW VIs that make up the li
 
 
 
-Similarily, TestStand will use the same set of steps to interact with a target device calling ``Initialize.vi`` as a setup action and ``Close.vi`` as a cleanup action. ``UploadScript.vi`` and ``SendCommand.vi`` will then be used to interact with the target.
+Similarily, [TestStand](https://www.ni.com/en-za/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-teststand.html) will use the same set of steps to interact with a target device calling ``Initialize.vi`` as a setup action and ``Close.vi`` as a cleanup action. ``UploadScript.vi`` and ``SendCommand.vi`` will then be used to interact with the target.
 
 <p align="center">
   <img alt="TestStand Sequence to use the micropython library / client and perform test against a target device, i.e. the micropython device" src="./Docs/Images/TestStand Sample.png">
